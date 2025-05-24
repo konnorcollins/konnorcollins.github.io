@@ -14,7 +14,7 @@
 	{#if currentRoute != '/'}
 		<a class="crumb" href="/">home</a>
 
-		{#each crumbs as crumb}
+		{#each crumbs as crumb (crumb)}
 			<span class="arrow">&gt;</span>
 			<a class="crumb" href={currentRoute}>{crumb}</a>
 		{/each}
