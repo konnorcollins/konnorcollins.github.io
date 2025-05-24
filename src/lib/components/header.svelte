@@ -1,10 +1,8 @@
 <script lang="ts">
-	import Breadcrumbs from './breadcrumbs.svelte';
 </script>
 
 <nav>
 	<h1>Konnor Collins</h1>
-	<Breadcrumbs />
 </nav>
 
 <style>
