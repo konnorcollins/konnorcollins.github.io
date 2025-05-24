@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import { base } from '$app/paths';
 </script>
 
 <main class="links" in:fade>
-	<a class="link" href="/about">About</a>
-	<a class="link" href="/experience">Experience</a>
-	<a class="link" href="/projects">Projects</a>
+	<a class="link" href="{base}/about">About</a>
+	<a class="link" href="{base}/experience">Experience</a>
+	<a class="link" href="{base}/projects">Projects</a>
 </main>
 
 <style>
