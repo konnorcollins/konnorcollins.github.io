@@ -1,16 +1,15 @@
 :root {
-    /*--foreground: white;*/
-    --font-color: #4fd6be;
-    --icon-color: #a9b1d6;
+	/*--foreground: white;*/
+	--font-color: #4fd6be;
+	--icon-color: #a9b1d6;
 
+	--foreground: #3b4261;
+	--background: #292e42;
+	--outside-background: #1f2335;
 
-    --foreground: #3b4261;
-    --background: #292e42;
-    --outside-background: #1f2335;
-    
-    --border: #3d59a1;
-    --big-link-color: #394b70;
-    --big-link-gradient: #3d59a1;
+	--border: #3d59a1;
+	--big-link-color: #394b70;
+	--big-link-gradient: #3d59a1;
 }
 
 /* TODO: light mode */
