@@ -1,0 +1,36 @@
+# Resume
+
+## Experience
+
+### DevOps Engineer (UST Global / Elevance Health)
+
+March 2025 - Present
+
+- Under construction...
+
+### Software Developer (AmeriBen / Elevance Health)
+
+Aug 2022 - March 2025
+
+- Responsible for maintaining existing applications according to new feature requests and bug reports.
+- Deployment of new and existing applications through azure build and release pipelines.
+- Debugging existing applications using both developer tools and in-house logging systems.
+- Code reviews.
+- Languages: Python, C#
+
+### Quality Assurance Specialist (AmeriBen)
+
+July 2020 - Aug 2022
+
+- Responsible for the creation of scripts and the use of other techniques to automate regression tests and other specific file transformations.
+- Creating and executing test plans.
+- Automation via creating and deploying Python Scripts, C# applications.
+- Creation and maintenance of VisualCron jobs.
+- Code reviews.
+- Languages: Python, C#
+
+## Education
+
+### BS Computer Science
+
+Boise State University, 2015 - 2019
