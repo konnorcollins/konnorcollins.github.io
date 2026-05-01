@@ -1,33 +1,49 @@
 <script lang="ts">
-	import '../styles/global.css';
-	import '../styles/variables.css';
+	//import '../styles/global.css';
+	//import '../styles/variables.css';
+	import '../styles/classless.css'
 
 	import type { Snippet } from 'svelte';
-	import Header from '$lib/components/header.svelte';
 	import Github from '$lib/components/socials/github.svelte';
 	import Linkedin from '$lib/components/socials/linkedin.svelte';
 	import Email from '$lib/components/socials/email.svelte';
+	import { resolve } from '$app/paths';
 
 	let { children }: { children: Snippet } = $props();
 </script>
 
 <div class="container">
-	<Header />
+	<!-- <Header /> -->
+	<header>
+		<nav>
+			<a href={resolve('/')}>home</a>
+			<a href={resolve('/about')}>about</a>
+			<a href={resolve('/posts')}>blog</a>
+		</nav>
+	</header>
+
 	{@render children()}
 
-	<div id="socials">
-		<Email width="50" height="50" />
-		<Github width="50" height="50" />
-		<Linkedin width="50" height="50" />
-	</div>
 
 	<footer>
-		<span class="copyright">Konnor Collins &copy; 2025</span>
+		<div id="socials">
+			<Email width="50" height="50" />
+			<Github width="50" height="50" />
+			<Linkedin width="50" height="50" />
+		</div>
+		<span class="copyright">Konnor Collins &copy; 2026</span>
+		<span>Built with SvelteKit + mdsvex + classless.css</span>
 	</footer>
 </div>
 
 <style>
 	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -46,6 +62,7 @@
 
 	footer {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
 
