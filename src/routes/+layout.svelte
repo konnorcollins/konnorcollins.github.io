@@ -8,12 +8,13 @@
 	import Linkedin from '$lib/components/socials/linkedin.svelte';
 	import Email from '$lib/components/socials/email.svelte';
 	import { resolve } from '$app/paths';
+	import PageTransition from '$lib/components/PageTransition.svelte';
+	import type { PageData } from './$types';
 
-	let { children }: { children: Snippet } = $props();
+	let { children, data }: { children: Snippet, data: PageData } = $props();
 </script>
 
 <div class="container">
-	<!-- <Header /> -->
 	<header>
 		<nav>
 			<a href={resolve('/')}>home</a>
@@ -22,7 +23,11 @@
 		</nav>
 	</header>
 
-	{@render children()}
+	<main>
+		<PageTransition url={data.url}>
+			{@render children()}
+		</PageTransition>
+	</main>
 
 
 	<footer>
