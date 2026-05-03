@@ -10,7 +10,6 @@
 	import { resolve } from '$app/paths';
 	import PageTransition from '$lib/components/PageTransition.svelte';
 	import type { PageData } from './$types';
-
 	let { children, data }: { children: Snippet, data: PageData } = $props();
 </script>
 
@@ -37,7 +36,7 @@
 			<Linkedin width="50" height="50" />
 		</div>
 		<span class="copyright">Konnor Collins &copy; 2026</span>
-		<span>Built with SvelteKit + mdsvex + classless.css</span>
+		<span>Built with <a href="https://svelte.dev/">svelte</a> + <a href="https://mdsvex.pngwn.io/">mdsvex</a> + <a href="https://classless.de/">classless.css</a></span>
 	</footer>
 </div>
 
@@ -45,13 +44,17 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		min-height: 100vh;
 	}
 
 	header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	main {
+		flex: 1;
 	}
 
 	#socials {
@@ -62,7 +65,6 @@
 
 		gap: 20px;
 		width: 100%;
-		background-color: var(--background);
 	}
 
 	footer {

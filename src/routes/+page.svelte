@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<main class="links" in:fade>
-	UNDER CONSTRUCTION
-</main>
+<div class="links" in:fade>
+	<h1>UNDER CONSTRUCTION</h1>
+</div>
 

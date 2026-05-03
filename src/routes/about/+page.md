@@ -5,16 +5,33 @@ description: A quick primer on me, the author.
 ---
 
 
-Hello.
+# About me
 
-## UNDER CONSTRUCTION
+Hello there!
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+I am a software engineer who delights in challenges and finding deterministic solutions to problems.  I also enjoy tabletop boardgaming, my current favorite is Earthborne Rangers.
+
 
 ## Work Experience
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+### Software Engineer / DevOps @ Elevance Health & AmeriBen
+<span>August 2022 - present</span>
+
+* Implemented new featuers and bugfixes for existing applications.
+* Deployed applications through Azure pipelines.
+* Debugged and troubleshooted issues with builds, both in pipelines and local developer environments.
+
+
+### Quality Assurance Specialist @ AmeriBen
+<span>July 2020 - August 2022</span>
+
+* Created and executed test plans.
+* Automated regression testing via python scripts.
+* Created & maintained cron jobs critical to business data pipelines.
 
 ## Education
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+### Bachelors in Computer Science
+<span>Boise State University</span>
+<span>2015 - 2019</span>
