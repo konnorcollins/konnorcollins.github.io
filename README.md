@@ -1,22 +1,12 @@
-# sv
+# konnorcollins.github.io
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A static resume & blog site, written by me.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+Built with [svelte](https://svelte.dev/) + [mdsvex](https://mdsvex.pngwn.io/) + [classless.css](https://classless.de/)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To run this site locally, run:
 
 ```bash
 npm run dev
@@ -27,12 +17,16 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To build the production version of this site, run:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+This makes use of the [sveltekit's static site adapter](https://svelte.dev/docs/kit/adapter-static) to prerender the entire project as static files.  A few further configuration changes in svelte.config.js allow for a clean deployment to github-pages.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Deployment is handled by [upload-pages-artifact](https://github.com/actions/upload-pages-artifact) and [deploy-pages](https://github.com/actions/deploy-pages).
+
+
+## Blog RSS Feed
+There isn't one (yet).

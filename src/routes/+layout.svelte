@@ -1,16 +1,17 @@
 <script lang="ts">
-	//import '../styles/global.css';
-	//import '../styles/variables.css';
-	import '../styles/classless.css'
+	import '../styles/classless.css';
 
+	import type { PageData } from './$types';
 	import type { Snippet } from 'svelte';
+
+	import { resolve } from '$app/paths';
+
 	import Github from '$lib/components/socials/github.svelte';
 	import Linkedin from '$lib/components/socials/linkedin.svelte';
 	import Email from '$lib/components/socials/email.svelte';
-	import { resolve } from '$app/paths';
 	import PageTransition from '$lib/components/PageTransition.svelte';
-	import type { PageData } from './$types';
-	let { children, data }: { children: Snippet, data: PageData } = $props();
+
+	let { children, data }: { children: Snippet; data: PageData } = $props();
 </script>
 
 <div class="container">
@@ -28,7 +29,6 @@
 		</PageTransition>
 	</main>
 
-
 	<footer>
 		<div id="socials">
 			<Email width="50" height="50" />
@@ -36,7 +36,11 @@
 			<Linkedin width="50" height="50" />
 		</div>
 		<span class="copyright">Konnor Collins &copy; 2026</span>
-		<span>Built with <a href="https://svelte.dev/">svelte</a> + <a href="https://mdsvex.pngwn.io/">mdsvex</a> + <a href="https://classless.de/">classless.css</a></span>
+		<span
+			>Built with <a href="https://svelte.dev/">svelte</a> +
+			<a href="https://mdsvex.pngwn.io/">mdsvex</a>
+			+ <a href="https://classless.de/">classless.css</a></span
+		>
 	</footer>
 </div>
 
