@@ -6,10 +6,10 @@
 
 	import { resolve } from '$app/paths';
 
-	import Github from '$lib/components/socials/github.svelte';
-	import Linkedin from '$lib/components/socials/linkedin.svelte';
-	import Email from '$lib/components/socials/email.svelte';
-	import PageTransition from '$lib/components/PageTransition.svelte';
+	import Github from '#lib/components/socials/github.svelte';
+	import Linkedin from '#lib/components/socials/linkedin.svelte';
+	import Email from '#lib/components/socials/email.svelte';
+	import PageTransition from '#lib/components/PageTransition.svelte';
 
 	let { children, data }: { children: Snippet; data: PageData } = $props();
 </script>
@@ -18,8 +18,8 @@
 	<header>
 		<nav>
 			<a href={resolve('/')}>home</a>
-			<a href={resolve('/about')}>about</a>
-			<a href={resolve('/posts')}>blog</a>
+			<a href={resolve('about')}>about</a>
+			<a href={resolve('posts')}>blog</a>
 		</nav>
 	</header>
 
@@ -35,9 +35,13 @@
 			<Github width="50" height="50" />
 			<Linkedin width="50" height="50" />
 		</div>
-		<span class="copyright">Konnor Collins &copy; 2026</span>
-		<span
-			>Built with <a href="https://svelte.dev/">svelte</a> +
+
+		<span class="copyright">Konnor Collins © 2026</span>
+
+		<span>
+			Built with
+			<a href="https://svelte.dev/">svelte</a>
+			+
 			<a href="https://mdsvex.pngwn.io/">mdsvex</a>
 			+ <a href="https://classless.de/">classless.css</a></span
 		>

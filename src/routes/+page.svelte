@@ -3,13 +3,13 @@
 </script>
 
 <div class="column">
-	<img id="profile" class="pulse" src="assets/about/profile.jpeg" />
+	<img id="profile" class="pulse" src="assets/about/profile.jpeg" alt="This is me!" />
 	<!-- pulse animation lifted from https://codepen.io/saigowthamr/pen/PowdZqy , MIT license-->
 	<br />
 
 	<div id="attention-grabber">
-		<span class="bounce">&rarr;</span>
-		<a href={resolve('/about')}>Resume</a>
+		<span class="bounce">→</span>
+		<a href={resolve('about')}>Resume</a>
 	</div>
 
 	<!-- Something could go here? -->

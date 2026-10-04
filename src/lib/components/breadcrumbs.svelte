@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	let currentRoute = $derived(page.route.id);
 	let crumbs = $derived.by(() => {
@@ -13,11 +13,11 @@
 
 <div id="breadcrumbs">
 	{#if currentRoute != '/'}
-		<a class="crumb" href="{base}/">home</a>
+		<a class="crumb" href="{resolve('')}/">home</a>
 
 		{#each crumbs as crumb (crumb)}
-			<span class="arrow">&gt;</span>
-			<a class="crumb" href="{base}/{currentRoute}">{crumb}</a>
+			<span class="arrow">></span>
+			<a class="crumb" href={currentRoute}>{crumb}</a>
 		{/each}
 	{/if}
 </div>
